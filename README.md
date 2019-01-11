@@ -31,7 +31,7 @@ mqconsole.sh
 
 
 
-附：RocketMQ 升级最新版本步骤：
+附：RocketMQ 组件升级最新版本步骤：
 
 1.下载官方最新版本源码
 2.执行mvn -Prelease-all -DskipTests clean install -U编译
