@@ -1,0 +1,1 @@
+docker run -d --net host -e "JAVA_OPTS=-Drocketmq.namesrv.addr=192.168.88.243:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" --name mqconsole  --restart always  -v /etc/localtime:/etc/localtime:ro -v /etc/hosts:/etc/hosts:ro  -t styletang/rocketmq-console-ng
