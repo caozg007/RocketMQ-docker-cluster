@@ -7,6 +7,7 @@ docker run -d  --name nameserver  --net host  --restart always    -v /etc/localt
 
 
 Broker启动：
+需在每个容器中修改broker.properties配置文件
 
 在192.168.88.247上启动broker_a_master：
 docker run -d  --name broker_a_master  --net host --restart always -v /etc/localtime:/etc/localtime:ro -v /etc/hosts:/etc/hosts:ro -e namesrvAddr="192.168.88.247:9876;192.168.88.250:9876" -e brokerIP1="192.168.88.247" -h broker_a_master 192.168.88.249/library/broker:4.3-alpine
