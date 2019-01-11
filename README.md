@@ -7,4 +7,6 @@ broker-entrypoint.sh为broker镜像的启动命令
 nameserver-entrypoint.sh为nameserver镜像的启动命令
 broker.properties为broker的配置文件
 cluster_run.sh为容器中的集群状态检查命令
+mqbroker_run.sh：broker容器启动命令
+mqnameserver_run.sh：nameserver容器启动命令
 
