@@ -1,5 +1,4 @@
-# RocketMQ-docker-cluster
-RocketMQ集群docker安装步骤：
+RocketMQ集群 Docker安装步骤：
 
 1.下载官方最新的RocketMQ 4.3.2源码包<br>
 下载地址：http://rocketmq.apache.org/release_notes/release-notes-4.3.2/
@@ -9,7 +8,7 @@ RocketMQ集群docker安装步骤：
 broker-entrypoint.sh为broker镜像的启动命令<br>
 nameserver-entrypoint.sh为nameserver镜像的启动命令<br>
 broker.properties为broker的配置文件<br>
-cluster_run.sh为容器中的集群状态检查命令<br>
+clusterlist.sh为容器中的集群状态检查命令<br>
 
 3.容器启动命令（ 注：启动脚本中的IP地址请自行替换）<br>
 mqbroker_run.sh：broker容器启动<br>
