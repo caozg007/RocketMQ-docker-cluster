@@ -44,13 +44,14 @@ docker push 192.168.*.*/library/namesrv:4.3-alpine
 docker push 192.168.*.*/library/broker:4.3-alpine
 
 7.登录需要重新部署的服务器，删除原broker,nameserver容器
+平滑升级步骤，先更新第一组的slave，再更新第一组的master，再更新第二组的slave，再更新第二组的master顺序，确保应用不中断
 
 8.获取私服镜像：
 docker pull 192.168.*.*/library/broker:4.3-alpine
 docker pull 192.168.*.*/library/namesrv:4.3-alpine
 
-9.启动脚本
+9.容器启动脚本不变
 
 11.检查mq集群或单机状态：
-docker exec -it broker sh  运行：sh clusterlist.sh查看broker版本
+进入容器运行：sh clusterlist.sh查看broker版本
 或登录WEB管理控制台查看broker版本 
