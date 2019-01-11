@@ -1,0 +1,1 @@
+docker run -d  --name broker  --net host --restart always -v /etc/localtime:/etc/localtime:ro -v /etc/hosts:/etc/hosts:ro -e namesrvAddr="192.168.88.249:9876" -e brokerIP1="192.168.88.249" -h broker  broker:alpine-0718
