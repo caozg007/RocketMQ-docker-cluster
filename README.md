@@ -18,5 +18,5 @@ mqnameserver_run.sh：nameserver容器启动<br>
 mqconsole_run.sh: MQ控制台容器启动<br>
 
 4.集群启动命令参考<br>
-cluster_run.sh
+cluster_run.sh<br>
 broker配置方法见broker.properties
