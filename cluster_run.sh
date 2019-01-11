@@ -1,9 +1,10 @@
-
+注：192.168.88.249/library/namesrv:4.3-alpine 修改为Dockerfile制作的nameserver镜像ID或镜像名，
+   192.168.88.249/library/broker:4.3-alpine 修改为Dockerfile制作的nameserver镜像ID或镜像名
 
 Nameserver启动：
-
 在192.168.88.247和192.168.88.250上各启动一个nameserver
-docker run -d  --name nameserver  --net host  --restart always    -v /etc/localtime:/etc/localtime:ro -v /etc/hosts:/etc/hosts:ro -h nameserver 192.168.88.249/library/namesrv:4.3-alpine
+
+docker run -d  --name nameserver  --net host  --restart always  -v /etc/localtime:/etc/localtime:ro -v /etc/hosts:/etc/hosts:ro -h nameserver 192.168.88.249/library/namesrv:4.3-alpine
 
 
 Broker启动：
