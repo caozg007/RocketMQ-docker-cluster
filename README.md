@@ -19,5 +19,5 @@ mqconsole_run.sh: MQ控制台容器启动<br>
 cluster_run.sh<br>
 broker配置方法见broker.properties
 
-5.MQ控制台安装
+5.MQ管理控制台安装
 mqconsole.sh
