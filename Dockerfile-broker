@@ -1,5 +1,5 @@
 FROM 192.168.88.249/library/java:alpine
-MAINTAINER caozg
+MAINTAINER caozg007
 WORKDIR /opt
 COPY broker-entrypoint.sh  broker-entrypoint.sh
 COPY clusterlist.sh clusterlist.sh
