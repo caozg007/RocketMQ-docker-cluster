@@ -19,4 +19,4 @@ mqconsole_run.sh: MQ控制台容器启动<br>
 
 4.集群启动命令参考<br>
 cluster_run.sh
-
+配置方法见broker.properties
