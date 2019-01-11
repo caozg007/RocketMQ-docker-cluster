@@ -9,4 +9,6 @@ broker.properties为broker的配置文件
 cluster_run.sh为容器中的集群状态检查命令
 mqbroker_run.sh：broker容器启动命令
 mqnameserver_run.sh：nameserver容器启动命令
+mqconsole_run.sh: MQ控制台容器启动命令
+ 注：启动脚本中的IP地址请自行替换
 
