@@ -6,4 +6,5 @@ RocketMQ集群docker安装步骤：
 broker-entrypoint.sh为broker镜像的启动命令
 nameserver-entrypoint.sh为nameserver镜像的启动命令
 broker.properties为broker的配置文件
+cluster_run.sh为容器中的集群状态检查命令
 
