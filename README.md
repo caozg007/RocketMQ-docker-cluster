@@ -3,8 +3,8 @@
 1.下载官方最新的RocketMQ 4.3.2源码包<br>
 下载地址：http://rocketmq.apache.org/release_notes/release-notes-4.3.2/
 
-2.git clone本项目到源码包同一文件夹下，使用dockerfile制作broker和nameserver的镜像<br>
-<br>文件列表说明：<br>
+2.git clone本项目到源码包同一文件夹下，使用dockerfile制作broker和nameserver的镜像  
+文件列表说明:  
 broker-entrypoint.sh为broker镜像的启动命令<br>
 nameserver-entrypoint.sh为nameserver镜像的启动命令<br>
 broker.properties为broker的配置文件<br>
