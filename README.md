@@ -39,23 +39,31 @@ mqconsole.sh
 cd /root/rocketmq_alpine_4.3/bin 下 执行grep -rn "PermSize" .  删除相关永久代配置
 
 4.制作Dockerfile镜像：
+```
 docker build -t broker:4.3-alpine .
 docker build -t namesrv:4.3-alpine .
+```
 
 5.镜像打标签：
+```
 docker tag namesrv:4.3-alpine 192.168.*.*/library/namesrv:4.3-alpine
 docker tag broker:4.3-alpine 192.168.*.*/library/broker:4.3-alpine
+```
 
 6.推送到Harbor私服
+```
 docker push 192.168.*.*/library/namesrv:4.3-alpine
 docker push 192.168.*.*/library/broker:4.3-alpine
+```
 
 7.登录需要重新部署的服务器，删除原broker,nameserver容器
 平滑升级步骤，先更新第一组的slave，再更新第一组的master，再更新第二组的slave，再更新第二组的master顺序，确保应用不中断
 
 8.获取私服镜像：
+```
 docker pull 192.168.*.*/library/broker:4.3-alpine
 docker pull 192.168.*.*/library/namesrv:4.3-alpine
+```
 
 9.容器启动脚本不变
 
